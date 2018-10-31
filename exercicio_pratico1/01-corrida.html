@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Corrida Rolimã</title>
+
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="funcoes.js"></script>
+  </head>
+  <body>
+<h1 >Corrida de Carrinhos Rolimã</h1>
+    <div class="container">
+
+        <form name="largada">
+
+          <div class="table-responsive">
+
+            <table id="tabela" class="table table-bordered table-striped table-hover">
+              <caption>Corrida</caption>
+
+              <!-- Cabeçalho //-->
+              <thead class="thead-dark">
+                <tr>
+                    <th>Largada</th>
+                    <th>Nome</th>
+                    <th>tempo em segundos</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary">
+
+
+
+            <td>1</td>
+          <td>  <input type="text" name="nome1" value=""class="form-control">
+          <div class="alert alert-danger" style="display:none"  id="alertanome1">
+            <p>Informe o nome </p>
+          </div>  </td>
+          <td>  <input type="text" name="tempo1" value=""class="form-control">
+          <div class="alert alert-danger" style="display:none"  id="alertatempo1">
+            <p>Informe o tempo corretamente</p>
+          </div>
+        </td>
+            </tr>
+            <tr class="table-primary">
+
+
+
+        <td>2</td>
+      <td>  <input type="text" name="nome2" value=""class="form-control">
+      <div class="alert alert-danger" style="display:none"  id="alertanome2">
+        <p>Informe o nome </p>
+      </div>  </td>
+      <td>  <input type="text" name="tempo2" value=""class="form-control">
+      <div class="alert alert-danger" style="display:none"  id="alertatempo2">
+        <p>Informe o tempo corretamente</p>
+      </div>
+    </td>
+        </tr>
+        <tr class="table-primary">
+
+
+
+    <td>3</td>
+  <td>  <input type="text" name="nome3" value=""class="form-control">
+  <div class="alert alert-danger" style="display:none"  id="alertanome3">
+    <p>Informe o nome </p>
+  </div>  </td>
+  <td>  <input type="text" name="tempo3" value=""class="form-control">
+  <div class="alert alert-danger" style="display:none"  id="alertatempo3">
+    <p>Informe o tempo corretamente</p>
+  </div>
+</td>
+    </tr>
+    <tr class="table-primary">
+
+
+
+<td>4</td>
+<td>  <input type="text" name="nome4" value=""class="form-control">
+<div class="alert alert-danger" style="display:none"  id="alertanome4">
+<p>Informe o nome </p>
+</div>  </td>
+<td>  <input type="text" name="tempo4" value=""class="form-control">
+<div class="alert alert-danger" style="display:none"  id="alertatempo4">
+<p>Informe o tempo corretamente</p>
+</div>
+</td>
+</tr>
+<tr class="table-primary">
+
+
+
+<td>5</td>
+<td>  <input type="text" name="nome5" value=""class="form-control">
+<div class="alert alert-danger" style="display:none"  id="alertanome5">
+<p>Informe o nome </p>
+</div>  </td>
+<td>  <input type="text" name="tempo5" value=""class="form-control">
+<div class="alert alert-danger" style="display:none"  id="alertatempo5">
+<p>Informe o tempo corretamente</p>
+</div>
+</td>
+</tr>
+<tr class="table-primary">
+
+
+
+<td>6</td>
+<td>  <input type="text" name="nome6" value=""class="form-control">
+<div class="alert alert-danger" style="display:none"  id="alertanome6">
+<p>Informe o nome </p>
+</div>  </td>
+<td>  <input type="text" name="tempo6" value=""class="form-control">
+<div class="alert alert-danger" style="display:none"  id="alertatempo6">
+<p>Informe o tempo corretamente</p>
+</div>
+</td>
+</tr>
+          </tbody>
+        </table>
+          </div>
+
+
+
+
+      <button type="button" class="btn btn-primary" name="calculo" id="btncalcular">Largada</button>
+    </form>
+
+    <div class="container">
+        <form name="largada">
+
+          <div class="table-responsive">
+
+            <table id="tabela" class="table table-bordered table-striped table-hover">
+              <caption>Corrida</caption>
+
+              <!-- Cabeçalho //-->
+              <thead class="thead-dark">
+                <tr>
+                  <th>Chegada</th>
+                    <th>Largada</th>
+
+                    <th>Nome</th>
+                    <th>Tempo</th>
+                    <th>vencedores</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary">
+                <td>  <input type="text" name="posicao1" value=""class="form-control"></td>
+                <td>  <input type="text" name="largada1" value=""class="form-control"></td>
+                <td>  <input type="text" name="nome1" value=""class="form-control"></td>
+                <td>  <input type="text" name="tempo1" value=""class="form-control"></td>
+                <td>  <input type="text" name="status1" value=""class="form-control"></td>
+          </tr>
+
+    <tr class="table-primary">
+    <td>  <input type="text" name="posicao2" value=""class="form-control"></td>
+    <td>  <input type="text" name="largada2" value=""class="form-control"></td>
+    <td>  <input type="text" name="nome2" value=""class="form-control"></td>
+    <td>  <input type="text" name="tempo2" value=""class="form-control"></td>
+    <td>  <input type="text" name="status2" value=""class="form-control"></td>
+</tr>
+<tr class="table-primary">
+<td>  <input type="text" name="posicao3" value=""class="form-control"></td>
+<td>  <input type="text" name="largada3" value=""class="form-control"></td>
+<td>  <input type="text" name="nome3" value=""class="form-control"></td>
+<td>  <input type="text" name="tempo3" value=""class="form-control"></td>
+<td>  <input type="text" name="status3" value=""class="form-control"></td>
+</tr>
+<tr class="table-primary">
+<td>  <input type="text" name="posicao4" value=""class="form-control"></td>
+<td>  <input type="text" name="largada4" value=""class="form-control"></td>
+<td>  <input type="text" name="nome4" value=""class="form-control"></td>
+<td>  <input type="text" name="tempo4" value=""class="form-control"></td>
+<td>  <input type="text" name="status4" value=""class="form-control"></td>
+</tr>
+<tr class="table-primary">
+<td>  <input type="text" name="posicao5" value=""class="form-control"></td>
+<td>  <input type="text" name="largada5" value=""class="form-control"></td>
+<td>  <input type="text" name="nome5" value=""class="form-control"></td>
+<td>  <input type="text" name="tempo5" value=""class="form-control"></td>
+<td>  <input type="text" name="status5" value=""class="form-control"></td>
+</tr>
+
+<tr class="table-primary">
+<td>  <input type="text" name="posicao6" value=""class="form-control"></td>
+<td>  <input type="text" name="largada6" value=""class="form-control"></td>
+<td>  <input type="text" name="nome6" value=""class="form-control"></td>
+<td>  <input type="text" name="tempo6" value=""class="form-control"></td>
+<td>  <input type="text" name="status6" value=""class="form-control"></td>
+</tr>
+
+
+
+
+
+          </tbody>
+        </table>
+          </div>
+
+
+
+
+    </form>
+
+</div>
+  </body>
+</html>
